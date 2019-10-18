@@ -1,0 +1,33 @@
+.nav
+{
+	display: flex;
+	flex-direction: row;
+	background: black;
+}
+
+.nav ul
+{
+	margin: 30px;
+}
+
+.nav li
+{
+	display: inline;	
+	background: black;
+}
+
+.nav li a
+{
+	color: red;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+}
+
+body
+{
+	abackground: url(background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+
+}
