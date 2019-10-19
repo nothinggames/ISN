@@ -1,15 +1,82 @@
 *
 {
-    font-family: Calibri;
+	font-family: Calibri;
 }
 
-h1
+body
 {
-    font-size: 50px;
-    color: blue;
+	background: url(background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+
 }
 
 p
 {
-    color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+}
+
+h1
+{
+
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border: 2px black solid;
+	border-radius: 15px;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+h2
+{
+
+	color: black;
+	margin: 0px 0px 0px 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+h3
+{
+
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.component
+{
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	border: 2px black solid;   
+	border-radius: 15px;
+	display: flex;
+	flex-direction: row;
+}
+
+.section
+{
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+
+#intro
+{
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+#more
+{
+	background-color: white;
 }

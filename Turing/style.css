@@ -3,20 +3,22 @@
 	display: flex;
 	flex-direction: row;
 	background: black;
+
 }
 
-.nav ul
+.nav img
 {
-	margin: 30px;
+	margin: 10px 10px 10px 10px;
 }
 
-.nav li
+
+.nav ul li
 {
 	display: inline;	
 	background: black;
 }
 
-.nav li a
+.nav ul li a
 {
 	color: red;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
