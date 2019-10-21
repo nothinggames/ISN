@@ -76,12 +76,9 @@ footer{
 	padding: 25px 25px 25px 25px;
 }
 
-
 footer a{
 	color: rgb(151, 142, 142); 
 }
-
-
 
 footer a:hover{
 	color: white;
@@ -89,9 +86,25 @@ footer a:hover{
 
 
 
+.component
+{
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	border: 2px black solid;   
+	border-radius: 30px;
+	display: flex;
+	flex-direction: row;
+	background: black;
+}
+
+
+
+
 body
 {
-	abackground: url(background.jpg);
+	background: url(background.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
