@@ -1,6 +1,6 @@
-body{
-	padding: 0;
-    margin: 0;
+/* Police générale */
+*{
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*Barre de Titre */
@@ -13,22 +13,21 @@ body{
 .title-bar img{
 	height: 100px;
 	border-radius: 15px;
-	margin-left: 75px;
+	margin-left: 80px;
 
 }
 
 .title-bar a{
 	text-decoration: none;
-	margin-left: 40px;
 }
 
 .title-bar a h1{
-	text-decoration: none;
 	color: rgb(88, 70, 70);
 	font-family: Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 60px;
 	margin: 0;
 	padding-top: 10px;
+	margin-left: 40px;
 }
 
 
@@ -40,11 +39,13 @@ body{
 
 .nav-button{
 
-	width: 150px;
+	width: 175px;
 	text-align: center;
 }
 
-
+#button-machine{
+	width: 250px;
+}
 
 .nav-button a{
 	color: rgb(151, 142, 142);
@@ -53,7 +54,7 @@ body{
 	text-decoration: none;
     display:inline-block;
     width:100%;
-    height:100%;
+	height:100%;
 }
 
 .nav-button a:hover{
@@ -61,7 +62,7 @@ body{
 	color: white;
 }
 
-#home{
+#button-home{
 	padding-left: 100px;
 }
 
@@ -84,28 +85,12 @@ footer a:hover{
 	color: white;
 }
 
-
-
-.component
-{
-	margin-top: 25px;
-	margin-left: 25px;
-	margin-right: 25px;
-	margin-bottom: 25px;
-	border: 2px black solid;   
-	border-radius: 30px;
-	display: flex;
-	flex-direction: row;
-	background: black;
-}
-
-
-
-
+/* Fond d'écran */
 body
 {
-	background: url(background.jpg);
+	background: url(images/background.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
+	margin: 0;
 }
