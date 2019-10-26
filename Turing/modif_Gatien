@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Turing's Memory</title>
+		<link rel="icon" href="icon.png" type="png">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<header>
+		<div class="title-bar">
+			<img src="logo.jpg" id="top">
+			<a href="home.html"><h1>Turing's Memory</h1></a>
+		</div>
+		<div class="nav-bar">
+			<div class="nav-button" id="home"><a href="home.html">Accueil</a></div>
+			<div class="nav-button"><a href="home.html">biographie</a></div>
+			<div class="nav-button"><a href="home.html">Bonb machine</a></div>
+			<div class="nav-button"><a href="home.html">Page 2</a></div>
+        </div>
+    </header>
+    <body>
+        <div id="conteneur">
+            <div id="el-proche">
+                <div class="txt">
+                    Alan Turing de son nom complet Alan Mathison Turing est né le 3 juin 1912 à Londres.
+                    Son père était fonctionnaire en Inde et il fut élevé par des amis de la famille en Grande-Bretagne 
+                    pendant la plus grande partie de son enfance.  Il se passionne pour les sciences, l’arithmétique et la
+                    cryptologie. Il étudie ensuite au King College à l’université de Cambridge où il réussi à résoudre
+                    <a href="https://fr.wikipedia.org/wiki/Th%C3%A8se_de_Church" title="Accéder à l'article Wikipédia"> l’Entscheidungsproblem</a>
+                    et publie ses premiers articles, et obtient ainsi une bourse de recherche. Sa résolution
+                    de l’Entscheidungsproblem se fait en définissant une série de calcul pouvant être faite par une machine,
+                    c’est sur le papier, un ordinateur.
+                    <br>Pendant la guerre, il a travaillé au service de décryptage Anglais et
+                    à permit de déchiffré le code Allemand ‘‘Enigma’’. Selon certain historiens, son travail à permit de
+                    raccourcir la guerre de deux ans et à sauvé des milliers de vies.
+                </div>
+
+                <div class="img">
+                    <img src="images\Machine-de-turing.jpg" alt="Image du film imitation Game" title="La machine de Turing" width="500px">
+                    
+                </div>
+            </div>
+            <div id="el-loin">
+                <div class="img">
+                    <img src="images/Statue Turing.jpg" alt="Statue de Turing" title="Alan Mathison Turing" width="300px">
+                </div>
+        
+                <div class="txt">
+                    Alan Turing est mort le 7 juin 1954 empoisonné à l’arsénique. L’enquête conclue à un suicide.
+                    Les deux dernières années de sa vie, il avait été condamné à suivre un traitement chimique
+                    pour avoir été reconnu coupable d’homosexualité, chose interdite à cette époque en Angleterre.
+                    60 ans plus tard, la reine Elizabeth II lui a accordée le pardon royal postume.
+                    <br><br>Alan Turing à apporté à l'informatique le concepte de la machine de Turing, c'est à dire 
+                    l'ordinateur. Il à également prouvé la limite théorique des ordinateurs en répondant à l’Entscheidungsproblem.
+                    De plus, durant la fin de sa vie, il s'est intéréssé à l'intéligence artificielle à travers son 
+                    <a href="https://fr.wikipedia.org/wiki/Test_de_Turing" title="Accéder à Wikipédia">le test de Turing</a>.
+                    Ce test à pour but d'arriver à savoir si une machine est capable de se faire passer pour un humain.
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>		
+		<p>
+			<a href="#top">Revenir en haut</a>
+			<br>Créé par Depeyre Gatien et Morena Clément.
+			<br>© 2019 - 3874
+		</p>	
+	</footer>
