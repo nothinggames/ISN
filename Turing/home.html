@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8"/>
 		<title>Turing's Memory | Accueil</title>
 		<link rel="icon" href="images/icon.png" type="png">
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="css/home.css" />
+		<style>
+			/* Réglage de la couleur du bouton de la barre de navigation */
+			#button-home a{
+				background: rgb(41, 40, 37);
+			}
+
+			/* Chronologie */
+			#chronologie{
+				margin: 10px;
+				padding: 10px;
+				background: rgb(68, 55, 55);
+				border: 5px rgb(68, 55, 55) solid; 
+				border-radius: 15px;	
+			}
+
+			#chronologie h3{
+				color: rgb(148, 126, 126);
+				font-family: Calibri, 'Trebuchet MS', sans-serif;
+				font-size: 35px;
+				text-decoration: bold;
+				margin: 0;
+			}
+
+			#chronologie ul li{
+				color: rgb(151, 140, 140);
+				font-family: Calibri, 'Trebuchet MS', sans-serif;
+				font-size: 25px;
+				text-decoration: bold;
+				margin: 10px;
+				width: 200px
+				
+			}
+			</style>
 	</head>
 
 	<header>
@@ -22,25 +55,26 @@
 	</header>
 
 	<body>
-
 		<div id="body">
 			<h2>Accueil</h2>
 			<div id="content">			
-				<div id="pages">
-					<div class="page">
-						<h3>Biographie</h3>
-						<p>Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator, cum quaestor non hos sed tribunos fabricarum insimulasset promittentes armorum si novas res agitari conperissent.</p>
-						<a href="page2">Lire la suite...</a>
+				<div id="sections">
+					<div class="section">
+						<a href="biographie.html"><h3>Biographie</h3></a>
+						<p>Alan Turing de son nom complet Alan Mathison Turing est né le 3 juin 1912 à Londres.
+								Son père était fonctionnaire en Inde et il fut élevé par des amis de la famille en Grande-Bretagne 
+								pendant la plus grande partie de son enfance.  Il se passionne pour les sciences, l’arithmétique et la
+								cryptologie. Il étudie ensuite au King College à l’université de Cambridge <a href="biographie.html">Lire la suite...</a></p>
 					</div>
-					<div class="page">
+					<div class="section">
 						<h3>Enigma</h3>
 						<p>Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.</p>
-						<a href="page3">Lire la suite...</a>
+						<a href="page3" style="padding-left: 750px;">Lire la suite...</a>
 					</div>
-					<div class="page">
+					<div class="section">
 						<h3>Machine de Turing</h3>
 						<p>Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.</p>
-						<a href="page4">Lire la suite...</a>
+						<a href="page4" style="padding-left: 750px;">Lire la suite...</a>
 					</div>
 				</div>
 				<div id="chronologie">
@@ -55,10 +89,6 @@
 				</div>
 			</div>
 		</div>
-
-
-		<!---- <iframe class="component" width="560" height="315" src="https://www.youtube.com/embed/7dpFeXV_hqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		--->
 	</body>
 
 	<footer>		
@@ -68,4 +98,5 @@
 			<br>© 2019 - 3874
 		</p>	
 	</footer>
+
 </html>
