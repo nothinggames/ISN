@@ -1,7 +1,22 @@
+//Liste des thèmes disponibles
+const themes = [
+    ["Ancien", "themes/old.css"],
+    ["Bleu", "themes/blue.css"]
+]
+
+function setCookie(name, value) {
+    document.cookie = `${name}=${value}`
+  }
+function getCookie(name) {
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + name + "=");
+    if (parts.length == 2) return parts.pop().split(";").shift();
+  }
+
 //Simple système de changement de thème
 function changeTheme(theme){
     console.log(`Chargement du thème ${theme}...`)
-    document.cookie = theme
+    setCookie("theme", theme)
     var head = document.getElementsByTagName("HEAD")[0];  
     var link = document.createElement("link"); 
     link.rel = "stylesheet";  
@@ -18,20 +33,16 @@ function updateTheme(){
     }
 }
 
-if (document.cookie == ""){
+
+if (getCookie("theme") == undefined){
     console.log("Définition du thème Ancien par défaut...");
-    document.cookie = 0; //Utilisation très simple car on n'utilise qu'un seul cookie pour tout le site
+    setCookie("theme", 0);
 }
 
-
-//Liste des thèmes disponibles
-const themes = [
-    ["Ancien", "themes/old.css"],
-    ["Bleu", "themes/blue.css"]
-]
-
 //Au chargement de la page, on applique le thème sélectionné
-changeTheme(`${document.cookie}`);
+changeTheme(getCookie("theme"));
+
+//Modification du selecteur de thèmes
 for (i=0; i<themes.length; i++){
     document.getElementById("theme_selector").options[document.getElementById("theme_selector").options.length] = new Option(themes[i][0], i);
     if (`${i}` == `${document.cookie}`){
