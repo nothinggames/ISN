@@ -227,5 +227,5 @@ section a:hover h3{
 select{
 	color: var(--text-color);
 	background: var(--second-background-color);
-	font-size: 15px;
+	font-size: 18px;
 }

@@ -20,7 +20,7 @@ function updateTheme(){
 
 if (document.cookie == ""){
     console.log("Définition du thème Ancien par défaut...");
-    document.cookie = "themes/old.css"; //Utilisation très simple car on n'utilise qu'un seul cookie pour tout le site
+    document.cookie = 0; //Utilisation très simple car on n'utilise qu'un seul cookie pour tout le site
 }
 
 
