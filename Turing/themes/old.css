@@ -1,0 +1,26 @@
+/* Variables */
+:root{
+	--main-title-text-color: rgb(88, 70, 70);
+	--page-title-text-color: rgb(32, 29, 29);
+	--titles-text-color: rgb(121, 102, 102);
+	--text-color: rgb(206, 182, 182);
+	--second-text-color: rgb(151, 142, 142);
+	--link-text-color: rgb(116, 105, 105);
+
+	--selected-background-color: rgb(41, 40, 37);
+	--hover-background-color: rgb(48, 45, 41);
+	--hover-text-color: rgb(194, 187, 181);
+
+	--first-background-color: rgba(88, 70, 70, .95);
+	--second-background-color: rgb(56, 50, 50);
+	--third-background-color: rgb(36, 35, 34);
+}
+
+/* Fond d'écran */
+body{
+	background: url(backgrounds/old.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	margin: 0;
+}

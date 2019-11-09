@@ -9,29 +9,28 @@
 		<style>
 			/* Réglage de la couleur du bouton de la barre de navigation */
 			#button-home a{
-				background: rgb(41, 40, 37);
+				background: var(--selected-background-color);
 			}
 
 			/* Chronologie */
 			#chronologie{
 				margin: 10px;
 				padding: 10px;
-				background: rgb(68, 55, 55);
-				border: 5px rgb(68, 55, 55) solid; 
+				background: var(--second-background-color);
+				border: 5px var(--second-background-color) solid; 
 				border-radius: 15px;	
 			}
 
 			#chronologie h3{
-				color: rgb(148, 126, 126);
-				font-family: Calibri, 'Trebuchet MS', sans-serif;
+				color: var(--titles-text-color);
 				font-size: 35px;
-				text-decoration: bold;
+				text-decoration: underline;
 				margin: 0;
+				padding-left: 25px;
 			}
 
 			#chronologie ul li{
-				color: rgb(151, 140, 140);
-				font-family: Calibri, 'Trebuchet MS', sans-serif;
+				color: var(--second-text-color);
 				font-size: 25px;
 				text-decoration: bold;
 				margin: 10px;
@@ -59,23 +58,23 @@
 			<h2 class="appear">Accueil</h2>
 			<div id="content">			
 				<div id="sections">
-					<div class="section">
+					<section>
 						<a href="biographie.html"><h3 class="appear">Biographie</h3></a>
-						<p class="appear">Alan Turing de son nom complet Alan Mathison Turing est né le 3 juin 1912 à Londres.
+						<p>Alan Turing de son nom complet Alan Mathison Turing est né le 3 juin 1912 à Londres.
 								Son père était fonctionnaire en Inde et il fut élevé par des amis de la famille en Grande-Bretagne 
 								pendant la plus grande partie de son enfance.  Il se passionne pour les sciences, l’arithmétique et la
 								cryptologie. Il étudie ensuite au King College à l’université de Cambridge <a href="biographie.html">Lire la suite...</a></p>
-					</div>
-					<div class="section">
+					</section>
+					<section>
 						<h3 class="appear">Enigma</h3>
-						<p class="appear">Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.</p>
+						<p>Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.</p>
 						<a href="page3" style="padding-left: 750px;">Lire la suite...</a>
-					</div>
-					<div class="section">
+					</section>
+					<section>
 						<h3 class="appear">Machine de Turing</h3>
-						<p class="appear">Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.</p>
+						<p>Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.</p>
 						<a href="page4" style="padding-left: 750px;">Lire la suite...</a>
-					</div>
+					</section>
 				</div>
 				<div id="chronologie">
 					<h3 class="appear">Chronologie</h3> 
@@ -90,13 +89,17 @@
 			</div>
 		</div>
 	</body>
-
 	<footer>		
-		<p class="appear">
-			<a href="#top">Revenir en haut</a>
-			<br>Créé par Depeyre Gatien et Morena Clément.
-			<br>© 2019 - 3600
-		</p>	
-	</footer>
+		<form name="theme" class="appear" onchange="updateTheme()">
+				<a href="#top">Revenir en haut</a>
+				</br>
+				<label for="theme_selector">Choisissez un thème: </label>
+				<select id="theme_selector">
+				</select>
+				</br>Céé par Depeyre Gatien et Morena Clément.</br>© 2019 - 3600
+		</form>
 
+	</footer>
+	
+	<script src="theme.js"></script>
 </html>

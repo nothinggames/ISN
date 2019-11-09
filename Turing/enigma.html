@@ -9,7 +9,7 @@
 		<style>
 				/* Réglage de la couleur du bouton de la barre de navigation */
 				#button-enigma a{
-					background: rgb(41, 40, 37);
+					background: var(--selected-background-color)
 				}
 		</style>
 	</head>
@@ -30,12 +30,17 @@
 	<body>
 
 	</body>
-
 	<footer>		
-		<p>
-			<a href="#top">Revenir en haut</a>
-			<br>Créé par Depeyre Gatien et Morena Clément.
-			<br>© 2019 - 3600
-		</p>	
-	</footer>
+			<form name="theme" class="appear" onchange="updateTheme()">
+					<a href="#top">Revenir en haut</a>
+					</br>
+					<label for="theme_selector">Choisissez un thème: </label>
+					<select id="theme_selector">
+					</select>
+					</br>Céé par Depeyre Gatien et Morena Clément.</br>© 2019 - 3600
+			</form>
+	
+		</footer>
+		
+		<script src="theme.js"></script>
 </html>

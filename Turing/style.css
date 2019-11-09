@@ -26,7 +26,6 @@
 	}
   }
 
-
 @keyframes Appear{
 	0% {
 	  opacity: 0;
@@ -38,9 +37,15 @@
 	}
   }
 
+/* Animations d'apparition */
 .appear{
 	opacity: 0;
-	animation: 1s ease-out 0.5s 1 Appear;
+	animation: 0.8s ease-out 0.5s 1 Appear;
+	animation-fill-mode: forwards;
+}
+p{
+	opacity: 0;
+	animation: 0.8s ease-out 0.5s 1 Appear;
 	animation-fill-mode: forwards;
 }
 
@@ -51,13 +56,11 @@
 
 /*Barre de Titre */
 header{
-	background: rgb(32, 31, 31);
+	background: var(--third-background-color);
 }
-
 
 .title-bar{
 	display: flex;
-	background: rgb(32, 31, 31);
 	padding: 20px 20px 20px 20px;
 	animation: 1s ease-out 0s 1 slideInFromTop;
 }
@@ -73,7 +76,7 @@ header{
 }
 
 .title-bar a h1{
-	color: rgb(88, 70, 70);
+	color: var(--main-title-text-color);
 	font-family: Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 60px;
 	margin: 0;
@@ -85,7 +88,7 @@ header{
 /*Barre de Navigation*/
 .nav-bar{
 	display: flex;
-	background: rgb(63, 59, 59);
+	background: var(--second-background-color);
 	animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -100,7 +103,7 @@ header{
 }
 
 .nav-button a{
-	color: rgb(151, 142, 142);
+	color: var(--second-text-color);
 	font-family: Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 30px;
 	text-decoration: none;
@@ -110,8 +113,8 @@ header{
 }
 
 .nav-button a:hover{
-	background: rgb(54, 52, 48);
-	color: white;
+	background: var(--hover-background-color);
+	color: var(--hover-text-color);
 }
 
 #button-home{
@@ -121,11 +124,11 @@ header{
 
 /*Bas de page */
 footer{
-	background: rgb(63, 59, 59);
+	background: var(--second-background-color);
 	text-align: center;
 	font-family: Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 20px;
-	color: rgb(151, 142, 142);
+	color: var(--second-text-color);
 	padding: 25px 25px 25px 25px;
 }
 
@@ -137,28 +140,18 @@ footer a:hover{
 	color: white;
 }
 
-/* Fond d'écran */
-body
-{
-	background: url(images/background.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100%;
-	margin: 0;
-}
-
 /* Corps de page */
 #body{
 	margin: 40px;
 	display: flex;
 	flex-direction: column;
-	background: rgba(88, 70, 70, .95);
+	background: var(--first-background-color);
 	border-radius: 15px;	
 	animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
 #body h2{
-	color: rgb(32, 29, 29);
+	color: var(--page-title-text-color);
 	padding-left: 100px;
 	font-size: 50px;
 	text-decoration: underline;
@@ -178,57 +171,61 @@ body
 	margin: 25px; 
 	display: flex;
 	flex-direction: column;
-	background: rgb(56, 50, 50);
+	background: var(--second-background-color);
 	color: white;
 	border-radius: 15px;
 }
 
 
 
-.section{
+section{
 	margin: 20px;
 	padding: 10px;
-	background: rgb(36, 35, 34);
+	background: var(--third-background-color);
 	border-radius: 15px;	
 }
 
-.section h3{
+section h3{
 	padding-left: 70px;
 	font-size: 30px;
-	color: rgb(121, 102, 102);
+	color: var(--titles-text-color);
 	text-decoration: underline;
 }
 
-.section p{
+section p{
 	margin: 15px;
 	font-size: 20px;
-	color: rgb(206, 182, 182);
+	color: var(--text-color);
 }
 
-.section a{
+section a{
 	font-size: 20px;
 	font-weight: bold;
-	color: rgb(116, 105, 105);
+	color: var(--link-text-color);
 }
-.section a:hover{
-	color: rgb(156, 134, 134);
+section a:hover{
+	color: var(--hover-text-color);
 }
-.section a:hover h3{
-	color: rgb(156, 134, 134);
+section a:hover h3{
+	color: var(--hover-text-color);
 }
 
 /* Images/Videos */
 .image{
 	margin: 10px;
-	border: 5px rgb(32, 30, 30) solid; 
 	border-radius: 15px;
 }
 
-.video{
-	margin: 10px;
-	border: 5px rgb(36, 35, 34) solid;	
+#video{
+	margin: 10px;	
 	border-radius: 15px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/* Formulaires */
+select{
+	color: var(--text-color);
+	background: var(--second-background-color);
+	font-size: 15px;
+}
