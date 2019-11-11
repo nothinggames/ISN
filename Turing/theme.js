@@ -1,9 +1,4 @@
-//Liste des thèmes disponibles
-const themes = [
-    ["Ancien", "themes/old.css"],
-    ["Bleu", "themes/blue.css"]
-]
-
+//Script de gestion de thème
 function setCookie(name, value) {
     document.cookie = `${name}=${value}`
   }
@@ -33,6 +28,12 @@ function updateTheme(){
     }
 }
 
+//Liste des thèmes disponibles
+const themes = [
+    ["Ancien", "themes/old.css"],
+    ["Bleu", "themes/blue.css"]
+]
+
 
 if (getCookie("theme") == undefined){
     console.log("Définition du thème Ancien par défaut...");
@@ -44,8 +45,8 @@ changeTheme(getCookie("theme"));
 
 //Modification du selecteur de thèmes
 for (i=0; i<themes.length; i++){
-    document.getElementById("theme_selector").options[document.getElementById("theme_selector").options.length] = new Option(themes[i][0], i);
-    if (`${i}` == `${document.cookie}`){
+    document.getElementById("theme_selector").options[document.getElementById("theme_selector").options.length] = new Option(themes[i][0], i);   
+    if (`${i}` == `${getCookie("theme")}`){
         document.getElementById("theme_selector").options.selectedIndex = i;
     }
 }

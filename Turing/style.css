@@ -98,7 +98,7 @@ header{
 	text-align: center;
 }
 
-#button-machine{
+#button-contact{
 	width: 250px;
 }
 
@@ -174,9 +174,8 @@ footer a:hover{
 	background: var(--second-background-color);
 	color: white;
 	border-radius: 15px;
+	width: 100%;
 }
-
-
 
 section{
 	margin: 20px;
@@ -228,4 +227,5 @@ select{
 	color: var(--text-color);
 	background: var(--second-background-color);
 	font-size: 18px;
+	outline: none;
 }

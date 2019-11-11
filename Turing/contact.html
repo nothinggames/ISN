@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Turing's Memory | Biographie</title>
+		<link rel="icon" href="images/icon.png" type="png">
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			/* Réglage de la couleur du bouton de la barre de navigation */
+			#button-contact a{
+			background: var(--selected-background-color)
+			}
+
+			#message_form{
+				margin: 10px;
+				color: var(--text-color);
+			}
+
+			#message_form textarea{
+				color: var(--text-color);
+				font-size: 17px;
+				border: 0px;
+				background: var(--second-background-color);
+				resize: none;
+				outline: none;
+		
+			}
+			#message_form input{
+				color: var(--text-color);
+				background: var(--second-background-color);
+				font-size: 18px;
+				border: 0px;
+				outline: none;
+			}
+			
+		</style>
+	</head>
+	<header>
+		<div class="title-bar">
+			<a href="home.html"><img src="images/logo.jpg" id="top"></a>
+			<a href="home.html"><h1>Turing's Memory</h1></a>
+		</div>
+		<div class="nav-bar">
+			<div class="nav-button" id="button-home"><a href="home.html">Accueil</a></div>
+			<div class="nav-button" id="button-biographie"><a href="biographie.html">Biographie</a></div>
+			<div class="nav-button" id="button-enigma"><a href="enigma.html">Enigma</a></div>
+			<div class="nav-button" id="button-contact"><a href="contact.html">Nous contacter</a></div>
+		</div>
+	</header>
+	<body>
+		<div id="body">
+			<h2 class="appear">Contact</h2>
+				<div id="content">			
+					<div id="sections" style="display: flex; flex-direction: row;">
+						<section style="width: 70%">
+							<div>
+								<h3 class="appear">Envoyer un message</h3>
+								<form name="send_message" id="message_form" class="appear">
+									<label for="message_input">Vous pouvez nous contacter par le formulaire ci-dessous:</label>
+									</br>
+									</br>
+									<textarea name="message_input" id="message_input" style="width: 100%; height: 200px;"></textarea>   
+									</br>    
+									<input type="button" value="Envoyer" id="send" style="margin-left: 40px;"/>
+								</form>
+							</div>
+						</section>
+						<img class="image appear" src="images/contact.jpg" alt="Image du film imitation Game" title="La machine de Turing" width="500px">			
+					</div>		
+				</div>
+			</div>
+		</div>
+	</body>
+	<footer>		
+		<form name="theme" class="appear" onchange="updateTheme()">
+			<a href="#top">Revenir en haut</a>
+			</br>
+			<label for="theme_selector">Choisissez un thème: </label>
+			<select id="theme_selector">
+			</select>
+			</br>Céé par Depeyre Gatien et Morena Clément.</br>© 2019 - 3600
+		</form>
+		</footer>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script >
+			jQuery(document).ready(function(){
+				$("#send").click(function(){
+					if (document.getElementById("message_input").value != ""){
+						if (confirm("Confirmer l'envoi ?")) {
+							console.log("Envoi...")
+							var message = {
+								msg: document.getElementById("message_input").value,
+							}
+							$.ajax({
+								url: 'http://62.4.13.113:5000/turing',
+								type : 'POST', 
+								dataType: 'json',
+								data: JSON.stringify(message),
+								success: function (response) {
+									console.log(`Reçu du serveur: ${response}`)
+									alert(response.response)
+								}
+							});
+						}
+					}
+				});
+			});
+		</script>
+		<script src="theme.js"></script>
+</html>
+
+
